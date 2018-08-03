@@ -20,6 +20,6 @@ Abs(As)      0
 Abs(Amu)     0
 Abs(M_3)     1500
 Abs(M_2)     200
-Abs(MUE)     2000
-MA0          880
-TB           20
+Abs(MUE)     200
+MA0          630
+TB           45

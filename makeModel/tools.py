@@ -13,10 +13,14 @@ SLHABlocksMap = {'M1' : [['EXTPAR', 1], ['MSOFT', 1]],
                 'tanb' : [['EXTPAR', 25], ['MINPAR', 3], ['HMIX', 2]],
                 'Atau' : ['EXTPAR', 13]}
 # BR Name -> pid, decay pids
-#SLHADecaysMap = { 'A0->Tautau' : [36, '-15 15'],
+# SLHADecaysMap = { 'A0->Tautau' : [36, '-15 15'],
 #                  }
-SLHADecaysMap = { 'A0->neutralino1neutralino1' : [36, '1000022 1000022'],
+# SLHADecaysMap = { 'A0->neutralino1neutralino1' : [36, '1000022 1000022'],
+#}
+SLHADecaysMap = { 'A0->chargino1chargino1' : [36, '-1000024 1000024'],
                   }
+
+
 debug = False
 # FHparams= OrderedDict()
 # FHparams = {'MT': 173.2, 'M3SQ': 1500, 'M3SU': 1500, 'M3SD': 1500,
