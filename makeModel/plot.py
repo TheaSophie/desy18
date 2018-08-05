@@ -17,8 +17,36 @@ from collections import OrderedDict
 #f.getBRArray(x,y,count)
 #f.plotting(Array1, Array2, Array3)
 
-for i in np.arange(100,1000,50):#18loops times
-    for j in np.arange(2,50,3):#16loops = 288 loops
-        counter += 1
-        f.getBRArray(i,j,counter)
-        
+#MA0=[], TanB=[]
+
+###create BranchingRatio Array for plotting
+#BR = []
+#counter = 1
+#for i in np.arange(100,1000,50):#18loops times
+#    BRrow = []
+#    for j in np.arange(2,50,3):#16loops = 288 loops
+#        counter += 1
+#        br = f.getBR(i,j,counter)
+#        BRrow.append(br[1])
+#    BR.append(BRrow)
+#    print counter
+
+#def getBR(x,y,count):
+#    writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(count)+'.in')
+#    runfeynh('InputFeynHiggs/mhmodp_'+str(count)+'.in')
+#    readoutBR(count)
+#getBR(600,45,1)
+
+BR = []
+counter = 0
+for x in np.arange(100,1000,50):#18loops times 
+    BRrow = []
+    for y in np.arange(2,50,3):#16loops = 288 loops
+        counter +=1
+        #f.writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(counter)+'.in')
+        #f.runfeynh("InputFeynHiggs/mhmodp_"+str(counter)+".in")
+        br = f.readoutBR(counter)
+        BRrow.append(br)
+        print counter
+    BR.append(BRrow)
+print BR

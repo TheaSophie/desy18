@@ -45,17 +45,17 @@ def writeInputFH(varyParams, newfilePath):
 
 ####3. reading out the branching ratio of the created FeynHiggs SLHA file
 def readoutBR(count):
-    #Array3 = []
+    Array3 = []
     SLHAfile = pyslha.readSLHAFile("InputFeynHiggs/mhmodp_"+str(count)+".in.fh-001")
     particleBlock = 36
     for decay in SLHAfile.decays[particleBlock].decays:
         if decay.ids == [1000022, 1000022]: #decay to neutralino1, neutralino1
             #Array3.append([particleBlock, decay.br])
-            #Array3.append(decay.br)
-            BR = decay.br
-    #print Array3
-    print BR
-readoutBR(900)
+            Array3.append(decay.br)
+            #BR = decay.br
+    print Array3
+    #print BR
+#readoutBR(900)
 
 
 ####4. Plotting the output data in a nice contour plot
@@ -70,8 +70,8 @@ def plotting(Array1, Array2, Array3):
 
 
 ####5. write a combined function, over which then can be looped in plot.py                                                                                   
-def getBRArray(x,y,count):
+def getBR(x,y,count):
     writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(count)+'.in')
     runfeynh('InputFeynHiggs/mhmodp_'+str(count)+'.in')
     readoutBR(count)
-#getBRArray(600,45,1)
+getBR(600,45,1)
