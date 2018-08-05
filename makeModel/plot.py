@@ -14,44 +14,38 @@ from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from collections import OrderedDict
 
-#f.getBRArray(x,y,count)
-#f.plotting(Array1, Array2, Array3)
+#### create the two Arrays which should be plotted against each other
+MA0 = []
+TanB = []
 
-#MA0=[], TanB=[]
-
-###create BranchingRatio Array for plotting
-#BR = []
-#counter = 1
-#for i in np.arange(100,1000,50):#18loops times
-#    BRrow = []
-#    for j in np.arange(2,50,3):#16loops = 288 loops
-#        counter += 1
-#        br = f.getBR(i,j,counter)
-#        BRrow.append(br[1])
-#    BR.append(BRrow)
-#    print counter
-
-#def getBR(x,y,count):
-#    writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(count)+'.in')
-#    runfeynh('InputFeynHiggs/mhmodp_'+str(count)+'.in')
-#    readoutBR(count)
-#getBR(600,45,1)
-
+### create BranchingRatio Array for plotting
 BR = []
 counter = 0
-for x in np.arange(100,1000,50):#18loops times 
+for x in np.arange(100,1000,36):#25loops times
     BRrow = []
-    for y in np.arange(2,50,3):#16loops = 288 loops
-        br = []
-        counter +=1
-        #f.writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(counter)+'.in')
-        #f.runfeynh("InputFeynHiggs/mhmodp_"+str(counter)+".in")
-        br = f.readoutBR(counter)
+    MA0row = []
+    TanBrow = []
+    for y in np.arange(2,50,2):#24loops = 600 loops
+        counter += 1
+        br = f.getBR(x,y,counter)
         BRrow.append(br)
         print counter
+        MA0row.append(x)
+        TanBrow.append(y)
     print BRrow
+    print MA0row
+    print TanBrow
     BR.append(BRrow)
-
+    MA0.append(MA0row)
+    TanB.append(TanBrow)
+    
 print BR
 BRArray = np.array(BR)
 print BRArray
+MA0Array = np.array(MA0)
+TanBArray = np.array(TanB)
+print MA0Array
+
+
+### plot the Arrays in a contour plot
+f.plotting(MA0Array, TanBArray, BRArray)
