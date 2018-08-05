@@ -53,7 +53,10 @@ def readoutBR(count):
             #Array3.append([particleBlock, decay.br])
             Array3.append(decay.br)
             #BR = decay.br
-    print Array3
+            print Array3
+            #print BR
+    return Array3
+    #return BR
     #print BR
 #readoutBR(900)
 
