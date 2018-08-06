@@ -18,7 +18,7 @@ from collections import OrderedDict
 
 #### 1. let feynhiggs run in the command line mode with the input file,
 def runfeynh(input):
-    runCommand = "/home/summerstudent/Programs/feynhiggs/x86_64-Linux/bin/FeynHiggs " + input + "#SLHA"
+    runCommand = "/home/summerstudent/Programs/feynhiggs/x86_64-Linux/bin/FeynHiggs " + input + "#SLHA > /dev/null 2>&1"
     os.system(runCommand)
 
 
@@ -41,30 +41,32 @@ def writeInputFH(varyParams, newfilePath):
 
 
 #### 3. reading out the branching ratio of the created FeynHiggs SLHA file
-def readoutBR(counter):
+def readoutBR(counter, fstate, HiggsNumber):
     branchr = 0
     SLHAfile = pyslha.readSLHAFile("InputFeynHiggs/mhmodp_"+str(counter)+".in.fh-001")
-    particleBlock = 36
+    particleBlock = HiggsNumber
     for decay in SLHAfile.decays[particleBlock].decays:
-        if decay.ids == [1000022, 1000022]: #decay to neutralino1, neutralino1
+        #if decay.ids == [1000022, 1000022]: #decay to neutralino1, neutralino1
+        if decay.ids == fstate:
             branchr = decay.br
     return branchr
 
 
 #### 4. Plotting the output data in a nice contour plot
-def plotting(Array1, Array2, Array3):
+def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle1, Daughterparticle2):
     fig = pyplot.figure()
     pyplot.contour(Array1, Array2, Array3)
     pyplot.xlabel(r'$m_{A^0}$ (GeV)')
     pyplot.ylabel(r'$tan{\beta} (degree)$')
-    pyplot.title(r'Contour Plot of Branching Ratios for A0 decaying to neutralino1 neutralino1')
+    pyplot.title(r'Contour Plot of Branching Ratios('+str(Motherparticle)+'->'+str(Daughterparticle1)+' '+str(Daughterparticle2)+')')
     #add legend of contour levels
+    pyplot.legend()
     pyplot.savefig("contour.pdf") #safe 
 
 
 #### 5. write a combined function, over which then can be looped in plot.py
-def getBR(x,y,counter):
+def getBR(x,y,counter, fstate, HiggsNumber):
     writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(counter)+'.in')
     runfeynh('InputFeynHiggs/mhmodp_'+str(counter)+'.in')
-    br = readoutBR(counter)
+    br = readoutBR(counter, fstate, HiggsNumber)
     return br
