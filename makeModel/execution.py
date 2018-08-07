@@ -21,7 +21,7 @@ TanB = []
 
 #create list for fstate, give Number for HiggsSector in SLHA File
 #fstate = [1000022,1000022]
-HiggsNumber = 36
+HiggsNumber = 35
 
 BRs = {}
 counter = 0
@@ -66,6 +66,6 @@ MA0Array = np.array(MA0)
 TanBArray = np.array(TanB)
 
 #safe the Arrays in a list
-ArrayList = [MA0Array,TanBArray,BRs]
-with open("Arrays/ArrayList.pkl",'web') as outputFile:
-    pickle.dump(ArrayList, outputFile, -1)
+ArrayListH = [MA0Array,TanBArray,BRs]
+with open("Arrays/ArrayListH.pkl",'web') as outputFile:
+    pickle.dump(ArrayListH, outputFile, -1)

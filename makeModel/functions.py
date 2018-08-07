@@ -6,6 +6,7 @@
 import os
 import pyslha
 import matplotlib.pyplot as pyplot
+import matplotlib.mlab as mlab
 import numpy as np
 from matplotlib.backends.backend_pdf import PdfPages
 from mpl_toolkits.mplot3d import Axes3D
@@ -53,20 +54,33 @@ def readoutBR(counter, fstate, HiggsNumber):
 
 
 #### 4. Plotting the output data in a nice contour plot
-def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle1, Daughterparticle2):
+def plotting_withLegendInLines(Array1, Array2, Array3, Motherparticle, Daughterparticle1, Daughterparticle2):
     fig = pyplot.figure()
-    pyplot.contour(Array1, Array2, Array3)
+    CS = pyplot.contour(Array1, Array2, Array3)
     pyplot.xlabel(r'$m_{A^0}$ (GeV)')
     pyplot.ylabel(r'$tan{\beta} (degree)$')
     pyplot.title(r'Contour Plot of Branching Ratios('+str(Motherparticle)+'->'+str(Daughterparticle1)+' '+str(Daughterparticle2)+')')
     #add legend of contour levels
-    pyplot.legend()
+    pyplot.clabel(CS, inline=1, fontsize=10)
     pyplot.savefig("contour.pdf") #safe 
 
+def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
+    fig = pyplot.figure()
+    #im = pyplot.imshow(Array3, interpolation='bilinear', origin='lower', cmap=cm.gray, extent=(-3,3,-2,2))
+    #levels = np.arange(0, 1, 0.2)
+    CS = pyplot.contour(Array1, Array2, Array3)
+    CB = pyplot.colorbar(CS, shrink=0.8, extend='both')
+    pyplot.xlabel(r'$m_{A^0}$ (GeV)')
+    pyplot.ylabel(r'$tan{\beta}$')
+    pyplot.title(r'Contour plot of BRs('+str(Motherparticle)+r' $\rightarrow$ '+str(Daughterparticle)+')')
+    #add legend of contour levels
+    #pyplot.clabel(CS, inline=1, fontsize=10)
+    pyplot.savefig("Plots_BR_H/contour_H_"+str(Daughterparticle)+".pdf") #safe
 
+    
 #### 5. write a combined function, over which then can be looped in plot.py
 def getBR(x,y,counter, fstate, HiggsNumber):
-    writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggs/mhmodp_'+str(counter)+'.in')
-    runfeynh('InputFeynHiggs/mhmodp_'+str(counter)+'.in')
+    writeInputFH({'MA0':x, 'TB':y}, 'InputFeynHiggsH/mhmodp_'+str(counter)+'.in')
+    runfeynh('InputFeynHiggsH/mhmodp_'+str(counter)+'.in')
     br = readoutBR(counter, fstate, HiggsNumber)
     return br
