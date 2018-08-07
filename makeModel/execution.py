@@ -27,30 +27,30 @@ BRs = {}
 counter = 0
 count = 0
 for fstate in [[-1000024,1000024],[-1000037,1000024],[-1000024,1000037],[-1000037,1000037],[1000022,1000022],[1000022,1000023],[1000022,1000025],[1000022,1000035],[1000023,1000023],[1000023,1000025],[1000023,1000035],[1000025,1000025],[1000025,1000035],[1000035,1000035]]:
-#1: chargino1 chargino1
-#2: chargino2 chargino1
-#3: chargino1 chargino2
-#4: chargino2 chargino2
-#5: neutralino1 neutralino1
-#6: neutralino1 neutralino2
-#7: neutralino1 neutralino3
-#8: neutralino1 neutralino4
-#9: neutralino2 neutralino2
-#10: neutralino2 neutralino3
-#11: neutralino2 neutralino4
-#12: neutralino3 neutralino3
-#13: neutralino3 neutralino4
-#14: neutralino4 neutralino4
-    key = 'BR' + str(count)
+#BR1: chargino1 chargino1
+#BR2: chargino2 chargino1
+#BR3: chargino1 chargino2
+#BR4: chargino2 chargino2
+#BR5: neutralino1 neutralino1
+#BR6: neutralino1 neutralino2
+#BR7: neutralino1 neutralino3
+#BR8: neutralino1 neutralino4
+#BR9: neutralino2 neutralino2
+#BR10: neutralino2 neutralino3
+#BR11: neutralino2 neutralino4
+#BR12: neutralino3 neutralino3
+#BR13: neutralino3 neutralino4
+#BR14: neutralino4 neutralino4
     count += 1
+    key = 'BR' + str(count)
     BR = []
     MA0 = []
     TanB = []
-    for x in np.arange(100,1000,450):#2loops times
+    for x in np.arange(100,1000,36):#25loops times
         BRrow = []
         MA0row = []
         TanBrow = []
-        for y in np.arange(2,50,24):#2loops = 4loops
+        for y in np.arange(2,50,2):#24loops = 600loops
             counter += 1
             br = f.getBR(x,y,counter,fstate,HiggsNumber)
             BRrow.append(br)
