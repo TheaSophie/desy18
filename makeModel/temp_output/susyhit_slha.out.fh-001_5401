@@ -1,0 +1,476 @@
+BLOCK SPINFO
+     1   FeynHiggs
+     2   2.14.2
+     2   built on Jul 23, 2018
+BLOCK MODSEL
+         1                  0   # Model
+         2                  1   # GridPts
+         3                  0   # Content
+         4                  0   # RPV
+         5                  0   # CPV
+         6                  0   # FV
+BLOCK SMINPUTS
+         1     1.28952830E+02   # invAlfaMZ
+         2     1.16639000E-05   # GF
+         3     1.18000000E-01   # AlfasMZ
+         4     9.11876000E+01   # MZ
+         5     4.20000000E+00   # Mb
+         6     1.73200000E+02   # Mt
+         7     1.77703000E+00   # Mtau
+BLOCK MINPAR
+         3     2.00000000E+00   # TB
+BLOCK EXTPAR
+         0     9.99526208E+02   # Q
+         1     9.56103570E+01   # M1
+         2     2.00000000E+02   # M2
+         3     1.50000000E+03   # M3
+        11     1.52000000E+03   # At
+        12     1.52000000E+03   # Ab
+        13     1.52000000E+03   # Atau
+        23     2.00000000E+02   # MUE
+        25     2.00000000E+00   # TB
+        26     1.00000000E+02   # MA0
+        27     5.06420520E+02   # MHp
+        32     5.00000000E+02   # MSL(2)
+        33     1.00000000E+03   # MSL(3)
+        34     5.00000000E+02   # MSE(1)
+        35     5.00000000E+02   # MSE(2)
+        36     1.00000000E+03   # MSE(3)
+        41     1.50000000E+03   # MSQ(1)
+        42     1.50000000E+03   # MSQ(2)
+        43     1.00000000E+03   # MSQ(3)
+        44     1.50000000E+03   # MSU(1)
+        45     1.50000000E+03   # MSU(2)
+        46     1.00000000E+03   # MSU(3)
+        47     1.50000000E+03   # MSD(1)
+        48     1.50000000E+03   # MSD(2)
+        49     1.00000000E+03   # MSD(3)
+BLOCK MASS
+         5     4.83530427E+00   # Mf(4,3)
+   1000012     4.97695932E+02   # MSf(1,1,1)
+   1000011     5.01211337E+02   # MSf(1,2,1)
+   2000011     5.01084778E+02   # MSf(2,2,1)
+   1000002     1.53240079E+03   # MSf(1,3,1)
+   2000002     1.53267842E+03   # MSf(2,3,1)
+   1000001     1.53354611E+03   # MSf(1,4,1)
+   2000001     1.53303265E+03   # MSf(2,4,1)
+   1000014     4.97695932E+02   # MSf(1,1,2)
+   1000013     5.01211337E+02   # MSf(1,2,2)
+   2000013     5.01084778E+02   # MSf(2,2,2)
+   1000004     1.53240079E+03   # MSf(1,3,2)
+   2000004     1.53267842E+03   # MSf(2,3,2)
+   1000003     1.53354611E+03   # MSf(1,4,2)
+   2000003     1.53303265E+03   # MSf(2,4,2)
+   1000016     9.98849959E+02   # MSf(1,1,3)
+   1000015     9.99578515E+02   # MSf(1,2,3)
+   2000015     1.00157261E+03   # MSf(2,2,3)
+   1000006     9.10796461E+02   # MSf(1,3,3)
+   2000006     1.11553686E+03   # MSf(2,3,3)
+   1000005     1.03568750E+03   # MSf(1,4,3)
+   2000005     1.03860886E+03   # MSf(2,4,3)
+        24     8.06934322E+01   # MW
+        25     7.05166107E+01   # Mh0
+        35     1.47514873E+02   # MHH
+        36     1.00000000E+02   # MA0
+        37     1.81836931E+02   # MHp
+   1000022     7.55442704E+01   # MNeu(1)
+   1000023     1.47055759E+02   # MNeu(2)
+   1000025    -2.04156068E+02   # MNeu(3)
+   1000035     2.86425579E+02   # MNeu(4)
+   1000024     1.32339081E+02   # MCha(1)
+   1000037     2.82608209E+02   # MCha(2)
+   1000021     1.54289693E+03   # MGl
+BLOCK DMASS
+        25     1.15743766E+00   # Delta Mh0
+        35     1.34347756E+00   # Delta MHH
+        36     0.00000000E+00   # Delta MA0
+        37     1.23545568E+01   # Delta MHp
+BLOCK NMIX
+     1   1     8.76272888E-01   # ZNeu(1,1)
+     1   2    -2.24786184E-01   # ZNeu(1,2)
+     1   3     3.40770808E-01   # ZNeu(1,3)
+     1   4    -2.55914543E-01   # ZNeu(1,4)
+     2   1     4.54082677E-01   # ZNeu(2,1)
+     2   2     6.77264951E-01   # ZNeu(2,2)
+     2   3    -4.28972060E-01   # ZNeu(2,3)
+     2   4     3.88721084E-01   # ZNeu(2,4)
+     3   1     4.55894345E-02   # ZNeu(3,1)
+     3   2    -5.91475153E-02   # ZNeu(3,2)
+     3   3    -6.94012980E-01   # ZNeu(3,3)
+     3   4    -7.16079017E-01   # ZNeu(3,4)
+     4   1     1.54519747E-01   # ZNeu(4,1)
+     4   2    -6.98057970E-01   # ZNeu(4,2)
+     4   3    -4.67123336E-01   # ZNeu(4,3)
+     4   4     5.20225439E-01   # ZNeu(4,4)
+BLOCK UMIX
+     1   1    -6.46055368E-01   # UCha(1,1)
+     1   2     7.63290548E-01   # UCha(1,2)
+     2   1     7.63290548E-01   # UCha(2,1)
+     2   2     6.46055368E-01   # UCha(2,2)
+BLOCK VMIX
+     1   1    -7.28025487E-01   # VCha(1,1)
+     1   2     6.85550064E-01   # VCha(1,2)
+     2   1     6.85550064E-01   # VCha(2,1)
+     2   2     7.28025487E-01   # VCha(2,2)
+BLOCK STAUMIX
+     1   1    -6.95777295E-01   # USf(1,1)
+     1   2     7.18257583E-01   # USf(1,2)
+     2   1    -7.18257583E-01   # USf(2,1)
+     2   2    -6.95777295E-01   # USf(2,2)
+BLOCK STOPMIX
+     1   1    -6.56362307E-01   # USf(1,1)
+     1   2     7.54445838E-01   # USf(1,2)
+     2   1    -7.54445838E-01   # USf(2,1)
+     2   2    -6.56362307E-01   # USf(2,2)
+BLOCK SBOTMIX
+     1   1    -6.04431785E-01   # USf(1,1)
+     1   2     7.96656901E-01   # USf(1,2)
+     2   1    -7.96656901E-01   # USf(2,1)
+     2   2    -6.04431785E-01   # USf(2,2)
+BLOCK ALPHA
+              -1.01599511E+00   # Alpha
+BLOCK DALPHA
+               2.13034822E-02   # Delta Alpha
+BLOCK HMIX Q=  0.99952621E+03
+         1     2.00000000E+02   # MUE
+         2     1.90653615E+00   # TB
+         3     2.42613618E+02   # VEV
+         4     1.26859432E+04   # MA02
+BLOCK GAUGE Q=  0.99952621E+03
+         1     3.60297987E-01   # g1
+         2     6.47897274E-01   # g2
+         3     1.05150912E+00   # g3
+BLOCK MSOFT Q=  0.99952621E+03
+         1     9.56103570E+01   # M1
+         2     2.00000000E+02   # M2
+         3     1.50000000E+03   # M3
+        21    -3.20175564E+04   # MHd2
+        22    -1.04561424E+04   # MHu2
+        31     5.00000000E+02   # MSL(1)
+        32     5.00000000E+02   # MSL(2)
+        33     1.00000000E+03   # MSL(3)
+        34     5.00000000E+02   # MSE(1)
+        35     5.00000000E+02   # MSE(2)
+        36     1.00000000E+03   # MSE(3)
+        41     1.50000000E+03   # MSQ(1)
+        42     1.50000000E+03   # MSQ(2)
+        43     1.00000000E+03   # MSQ(3)
+        44     1.50000000E+03   # MSU(1)
+        45     1.50000000E+03   # MSU(2)
+        46     1.00000000E+03   # MSU(3)
+        47     1.50000000E+03   # MSD(1)
+        48     1.50000000E+03   # MSD(2)
+        49     1.00000000E+03   # MSD(3)
+BLOCK AE Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Af(1,1)
+     2   2     0.00000000E+00   # Af(2,2)
+     3   3     1.52000000E+03   # Af(3,3)
+BLOCK AU Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Af(1,1)
+     2   2     0.00000000E+00   # Af(2,2)
+     3   3     1.52000000E+03   # Af(3,3)
+BLOCK AD Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Af(1,1)
+     2   2     0.00000000E+00   # Af(2,2)
+     3   3     1.52000000E+03   # Af(3,3)
+BLOCK YE Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Yf(1,1)
+     2   2     0.00000000E+00   # Yf(2,2)
+     3   3     2.19781110E-02   # Yf(3,3)
+BLOCK YU Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Yf(1,1)
+     2   2     0.00000000E+00   # Yf(2,2)
+     3   3     9.90357978E-01   # Yf(3,3)
+BLOCK YD Q=  0.99952621E+03
+     1   1     0.00000000E+00   # Yf(1,1)
+     2   2     0.00000000E+00   # Yf(2,2)
+     3   3     3.10298780E-02   # Yf(3,3)
+BLOCK CVHMIX
+     1   1     9.65082341E-01   # UH(1,1)
+     1   2     2.61946704E-01   # UH(1,2)
+     1   3     0.00000000E+00   # UH(1,3)
+     2   1    -2.61946704E-01   # UH(2,1)
+     2   2     9.65082341E-01   # UH(2,2)
+     2   3     0.00000000E+00   # UH(2,3)
+     3   1     0.00000000E+00   # UH(3,1)
+     3   2     0.00000000E+00   # UH(3,2)
+     3   3     1.00000000E+00   # UH(3,3)
+BLOCK PRECOBS
+         1     3.24277765E-02   # DeltaR
+         2     1.52106403E-04   # DeltaRho
+         3     8.04310018E+01   # MWMSSM
+         4     8.03884908E+01   # MWSM
+         5     2.31198932E-01   # SW2effMSSM
+         6     2.31246472E-01   # SW2effSM
+        11     2.54747054E-10   # gminus2mu
+        21     0.00000000E+00   # EDMeTh
+        22     0.00000000E+00   # EDMn
+        23     0.00000000E+00   # EDMHg
+        31     6.59755357E-04   # bsgammaMSSM
+        32     3.89991202E-04   # bsgammaSM
+        33     2.49158209E+01   # DeltaMsMSSM
+        34     2.03832807E+01   # DeltaMsSM
+        35     6.97257415E-08   # BsmumuMSSM
+        36     3.32833591E-09   # BsmumuSM
+DECAY   1000021     3.78978598E+01   # Gamma(gluino)
+     6.73668163E-05   2        -1   1000001   # BR(gluino -> Down sdown1)
+     6.73668163E-05   2  -1000001         1   # BR(gluino -> Sdown1 down)
+     7.49432343E-05   2        -1   2000001   # BR(gluino -> Down sdown2)
+     7.49432343E-05   2  -2000001         1   # BR(gluino -> Sdown2 down)
+     8.48169076E-05   2        -2   1000002   # BR(gluino -> Up sup1)
+     8.48169076E-05   2  -1000002         2   # BR(gluino -> Sup1 up)
+     8.04038349E-05   2        -2   2000002   # BR(gluino -> Up sup2)
+     8.04038349E-05   2  -2000002         2   # BR(gluino -> Sup2 up)
+     6.73668163E-05   2        -3   1000003   # BR(gluino -> Strange sstrange1)
+     6.73668163E-05   2  -1000003         3   # BR(gluino -> Sstrange1 strange)
+     7.49432343E-05   2        -3   2000003   # BR(gluino -> Strange sstrange2)
+     7.49432343E-05   2  -2000003         3   # BR(gluino -> Sstrange2 strange)
+     8.48169076E-05   2        -4   1000004   # BR(gluino -> Charm scharm1)
+     8.48169076E-05   2  -1000004         4   # BR(gluino -> Scharm1 charm)
+     8.04038349E-05   2        -4   2000004   # BR(gluino -> Charm scharm2)
+     8.04038349E-05   2  -2000004         4   # BR(gluino -> Scharm2 charm)
+     1.19703435E-01   2        -5   1000005   # BR(gluino -> Bottom sbottom1)
+     1.19703435E-01   2  -1000005         5   # BR(gluino -> Sbottom1 bottom)
+     1.16734459E-01   2        -5   2000005   # BR(gluino -> Bottom sbottom2)
+     1.16734459E-01   2  -2000005         5   # BR(gluino -> Sbottom2 bottom)
+     2.15132791E-01   2        -6   1000006   # BR(gluino -> Top stop1)
+     2.15132791E-01   2  -1000006         6   # BR(gluino -> Stop1 top)
+     4.78142540E-02   2        -6   2000006   # BR(gluino -> Top stop2)
+     4.78142540E-02   2  -2000006         6   # BR(gluino -> Stop2 top)
+DECAY   1000006     2.76681121E+01   # Gamma(stop1)
+     1.95131353E-02   2         6   1000022   # BR(stop1 -> top neutralino1)
+     8.18367064E-02   2         6   1000023   # BR(stop1 -> top neutralino2)
+     2.35098762E-01   2         6   1000025   # BR(stop1 -> top neutralino3)
+     2.67423854E-01   2         6   1000035   # BR(stop1 -> top neutralino4)
+     2.48268247E-02   2         5   1000024   # BR(stop1 -> bottom chargino1)
+     3.71300717E-01   2         5   1000037   # BR(stop1 -> bottom chargino2)
+DECAY   2000006     4.18873073E+01   # Gamma(stop2)
+     8.99734896E-02   2         6   1000022   # BR(stop2 -> top neutralino1)
+     1.42083756E-01   2         6   1000023   # BR(stop2 -> top neutralino2)
+     2.60480774E-01   2         6   1000025   # BR(stop2 -> top neutralino3)
+     5.65968864E-02   2         6   1000035   # BR(stop2 -> top neutralino4)
+     3.26028448E-01   2         5   1000024   # BR(stop2 -> bottom chargino1)
+     8.40888730E-03   2         5   1000037   # BR(stop2 -> bottom chargino2)
+     5.09464386E-04   2        25   1000006   # BR(stop2 -> h0 stop1)
+     2.14216297E-03   2        35   1000006   # BR(stop2 -> HH stop1)
+     4.96219264E-02   2        36   1000006   # BR(stop2 -> A0 stop1)
+     6.41542044E-02   2        23   1000006   # BR(stop2 -> Z stop1)
+DECAY   1000005     1.14143310E+01   # Gamma(sbottom1)
+     3.97838944E-02   2         5   1000022   # BR(sbottom1 -> bottom neutralino1)
+     4.85885489E-02   2         5   1000023   # BR(sbottom1 -> bottom neutralino2)
+     2.70626509E-03   2         5   1000025   # BR(sbottom1 -> bottom neutralino3)
+     7.01234175E-02   2         5   1000035   # BR(sbottom1 -> bottom neutralino4)
+     3.46703106E-01   2  -1000024         6   # BR(sbottom1 -> Chargino1 top)
+     4.49654377E-01   2  -1000037         6   # BR(sbottom1 -> Chargino2 top)
+     4.24403913E-02   2       -24   1000006   # BR(sbottom1 -> W stop1)
+DECAY   2000005     2.00007667E+01   # Gamma(sbottom2)
+     3.20803115E-02   2         5   1000022   # BR(sbottom2 -> bottom neutralino1)
+     5.14897833E-02   2         5   1000023   # BR(sbottom2 -> bottom neutralino2)
+     2.81175042E-04   2         5   1000025   # BR(sbottom2 -> bottom neutralino3)
+     5.85061595E-02   2         5   1000035   # BR(sbottom2 -> bottom neutralino4)
+     3.75236629E-01   2  -1000024         6   # BR(sbottom2 -> Chargino1 top)
+     4.31991582E-01   2  -1000037         6   # BR(sbottom2 -> Chargino2 top)
+     3.29695953E-03   2       -37   1000006   # BR(sbottom2 -> Hp stop1)
+     4.71174002E-02   2       -24   1000006   # BR(sbottom2 -> W stop1)
+DECAY   1000002     1.79282649E+01   # Gamma(sup1)
+     1.32546611E-03   2         2   1000022   # BR(sup1 -> up neutralino1)
+     1.95173281E-01   2         2   1000023   # BR(sup1 -> up neutralino2)
+     8.50946142E-04   2         2   1000025   # BR(sup1 -> up neutralino3)
+     1.43354630E-01   2         2   1000035   # BR(sup1 -> up neutralino4)
+     3.58034604E-01   2         1   1000024   # BR(sup1 -> down chargino1)
+     3.01261073E-01   2         1   1000037   # BR(sup1 -> down chargino2)
+DECAY   2000002     3.34687621E+00   # Gamma(sup2)
+     7.71033333E-01   2         2   1000022   # BR(sup2 -> up neutralino1)
+     2.04441757E-01   2         2   1000023   # BR(sup2 -> up neutralino2)
+     2.02684978E-03   2         2   1000025   # BR(sup2 -> up neutralino3)
+     2.24980600E-02   2         2   1000035   # BR(sup2 -> up neutralino4)
+DECAY   1000001     1.78565341E+01   # Gamma(sdown1)
+     5.13501351E-02   2         1   1000022   # BR(sdown1 -> down neutralino1)
+     1.18955761E-01   2         1   1000023   # BR(sdown1 -> down neutralino2)
+     1.51989835E-03   2         1   1000025   # BR(sdown1 -> down neutralino3)
+     1.69728986E-01   2         1   1000035   # BR(sdown1 -> down neutralino4)
+     2.83241785E-01   2  -1000024         2   # BR(sdown1 -> Chargino1 up)
+     3.75203435E-01   2  -1000037         2   # BR(sdown1 -> Chargino2 up)
+DECAY   2000001     8.36862909E-01   # Gamma(sdown2)
+     7.71031745E-01   2         1   1000022   # BR(sdown2 -> down neutralino1)
+     2.04442655E-01   2         1   1000023   # BR(sdown2 -> down neutralino2)
+     2.02687534E-03   2         1   1000025   # BR(sdown2 -> down neutralino3)
+     2.24987247E-02   2         1   1000035   # BR(sdown2 -> down neutralino4)
+DECAY   1000004     1.79282649E+01   # Gamma(scharm1)
+     1.32546611E-03   2         4   1000022   # BR(scharm1 -> charm neutralino1)
+     1.95173281E-01   2         4   1000023   # BR(scharm1 -> charm neutralino2)
+     8.50946142E-04   2         4   1000025   # BR(scharm1 -> charm neutralino3)
+     1.43354630E-01   2         4   1000035   # BR(scharm1 -> charm neutralino4)
+     3.58034604E-01   2         3   1000024   # BR(scharm1 -> strange chargino1)
+     3.01261073E-01   2         3   1000037   # BR(scharm1 -> strange chargino2)
+DECAY   2000004     3.34687621E+00   # Gamma(scharm2)
+     7.71033333E-01   2         4   1000022   # BR(scharm2 -> charm neutralino1)
+     2.04441757E-01   2         4   1000023   # BR(scharm2 -> charm neutralino2)
+     2.02684978E-03   2         4   1000025   # BR(scharm2 -> charm neutralino3)
+     2.24980600E-02   2         4   1000035   # BR(scharm2 -> charm neutralino4)
+DECAY   1000003     1.78565341E+01   # Gamma(sstrange1)
+     5.13501351E-02   2         3   1000022   # BR(sstrange1 -> strange neutralino1)
+     1.18955761E-01   2         3   1000023   # BR(sstrange1 -> strange neutralino2)
+     1.51989835E-03   2         3   1000025   # BR(sstrange1 -> strange neutralino3)
+     1.69728986E-01   2         3   1000035   # BR(sstrange1 -> strange neutralino4)
+     2.83241785E-01   2  -1000024         4   # BR(sstrange1 -> Chargino1 charm)
+     3.75203435E-01   2  -1000037         4   # BR(sstrange1 -> Chargino2 charm)
+DECAY   2000003     8.36862909E-01   # Gamma(sstrange2)
+     7.71031745E-01   2         3   1000022   # BR(sstrange2 -> strange neutralino1)
+     2.04442655E-01   2         3   1000023   # BR(sstrange2 -> strange neutralino2)
+     2.02687534E-03   2         3   1000025   # BR(sstrange2 -> strange neutralino3)
+     2.24987247E-02   2         3   1000035   # BR(sstrange2 -> strange neutralino4)
+DECAY   1000011     4.65262593E+00   # Gamma(selectron1)
+     2.96056579E-02   2        11   1000022   # BR(selectron1 -> electron neutralino1)
+     3.24795505E-01   2        11   1000023   # BR(selectron1 -> electron neutralino2)
+     3.57407453E-04   2        11   1000025   # BR(selectron1 -> electron neutralino3)
+     7.64364730E-02   2        11   1000035   # BR(selectron1 -> electron neutralino4)
+     3.24964172E-01   2  -1000024        12   # BR(selectron1 -> Chargino1 nu_e)
+     2.43840784E-01   2  -1000037        12   # BR(selectron1 -> Chargino2 nu_e)
+DECAY   2000011     2.37547910E+00   # Gamma(selectron2)
+     7.99010645E-01   2        11   1000022   # BR(selectron2 -> electron neutralino1)
+     1.87622504E-01   2        11   1000023   # BR(selectron2 -> electron neutralino2)
+     1.57509472E-03   2        11   1000025   # BR(selectron2 -> electron neutralino3)
+     1.17917565E-02   2        11   1000035   # BR(selectron2 -> electron neutralino4)
+DECAY   1000013     4.65262593E+00   # Gamma(smuon1)
+     2.96056579E-02   2        13   1000022   # BR(smuon1 -> muon neutralino1)
+     3.24795505E-01   2        13   1000023   # BR(smuon1 -> muon neutralino2)
+     3.57407453E-04   2        13   1000025   # BR(smuon1 -> muon neutralino3)
+     7.64364730E-02   2        13   1000035   # BR(smuon1 -> muon neutralino4)
+     3.24964172E-01   2  -1000024        14   # BR(smuon1 -> Chargino1 nu_mu)
+     2.43840784E-01   2  -1000037        14   # BR(smuon1 -> Chargino2 nu_mu)
+DECAY   2000013     2.37547910E+00   # Gamma(smuon2)
+     7.99010645E-01   2        13   1000022   # BR(smuon2 -> muon neutralino1)
+     1.87622504E-01   2        13   1000023   # BR(smuon2 -> muon neutralino2)
+     1.57509472E-03   2        13   1000025   # BR(smuon2 -> muon neutralino3)
+     1.17917565E-02   2        13   1000035   # BR(smuon2 -> muon neutralino4)
+DECAY   1000015     8.66252755E+00   # Gamma(stau1)
+     2.43850226E-01   2        15   1000022   # BR(stau1 -> tau neutralino1)
+     2.49742606E-01   2        15   1000023   # BR(stau1 -> tau neutralino2)
+     2.56421374E-03   2        15   1000025   # BR(stau1 -> tau neutralino3)
+     8.72088581E-02   2        15   1000035   # BR(stau1 -> tau neutralino4)
+     1.72716675E-01   2  -1000024        16   # BR(stau1 -> Chargino1 nu_tau)
+     2.43917421E-01   2  -1000037        16   # BR(stau1 -> Chargino2 nu_tau)
+DECAY   2000015     8.97646063E+00   # Gamma(stau2)
+     2.33686150E-01   2        15   1000022   # BR(stau2 -> tau neutralino1)
+     2.58188504E-01   2        15   1000023   # BR(stau2 -> tau neutralino2)
+     5.58193839E-05   2        15   1000025   # BR(stau2 -> tau neutralino3)
+     7.48098584E-02   2        15   1000035   # BR(stau2 -> tau neutralino4)
+     2.09028178E-01   2  -1000024        16   # BR(stau2 -> Chargino1 nu_tau)
+     2.24231490E-01   2  -1000037        16   # BR(stau2 -> Chargino2 nu_tau)
+DECAY   1000012     4.69886736E+00   # Gamma(snu_e1)
+     2.14042764E-01   2        12   1000022   # BR(snu_e1 -> nu_e neutralino1)
+     6.64657499E-02   2        12   1000023   # BR(snu_e1 -> nu_e neutralino2)
+     2.18456660E-03   2        12   1000025   # BR(snu_e1 -> nu_e neutralino3)
+     1.21587385E-01   2        12   1000035   # BR(snu_e1 -> nu_e neutralino4)
+     4.04868548E-01   2        11   1000024   # BR(snu_e1 -> electron chargino1)
+     1.90850987E-01   2        11   1000037   # BR(snu_e1 -> electron chargino2)
+DECAY   1000014     4.69886736E+00   # Gamma(snu_mu1)
+     2.14042764E-01   2        14   1000022   # BR(snu_mu1 -> nu_mu neutralino1)
+     6.64657499E-02   2        14   1000023   # BR(snu_mu1 -> nu_mu neutralino2)
+     2.18456660E-03   2        14   1000025   # BR(snu_mu1 -> nu_mu neutralino3)
+     1.21587385E-01   2        14   1000035   # BR(snu_mu1 -> nu_mu neutralino4)
+     4.04868548E-01   2        13   1000024   # BR(snu_mu1 -> muon chargino1)
+     1.90850987E-01   2        13   1000037   # BR(snu_mu1 -> muon chargino2)
+DECAY   1000016     1.25913717E+01   # Gamma(snu_tau1)
+     1.66042882E-01   2        16   1000022   # BR(snu_tau1 -> nu_tau neutralino1)
+     5.71963560E-02   2        16   1000023   # BR(snu_tau1 -> nu_tau neutralino2)
+     2.17163598E-03   2        16   1000025   # BR(snu_tau1 -> nu_tau neutralino3)
+     1.71485080E-01   2        16   1000035   # BR(snu_tau1 -> nu_tau neutralino4)
+     3.39321639E-01   2        15   1000024   # BR(snu_tau1 -> tau chargino1)
+     2.63782407E-01   2        15   1000037   # BR(snu_tau1 -> tau chargino2)
+DECAY   1000024     2.06941849E-04   # Gamma(chargino1)
+     3.33340934E-01   3        -1         2   1000022   # BR(chargino1 -> Down up neutralino1)
+     3.32339854E-01   3        -3         4   1000022   # BR(chargino1 -> Strange charm neutralino1)
+     1.11868730E-01   3       -11        12   1000022   # BR(chargino1 -> Electron nu_e neutralino1)
+     1.11866610E-01   3       -13        14   1000022   # BR(chargino1 -> Muon nu_mu neutralino1)
+     1.10583873E-01   3       -15        16   1000022   # BR(chargino1 -> Tau nu_tau neutralino1)
+DECAY   1000037     1.12030409E+00   # Gamma(chargino2)
+     4.16727342E-01   2        23   1000024   # BR(chargino2 -> Z chargino1)
+     6.58615663E-03   2        24   1000022   # BR(chargino2 -> W neutralino1)
+     4.78429401E-01   2        24   1000023   # BR(chargino2 -> W neutralino2)
+     6.55873299E-03   2        25   1000024   # BR(chargino2 -> h0 chargino1)
+     5.31225179E-04   2        35   1000024   # BR(chargino2 -> HH chargino1)
+     5.30603779E-02   2        36   1000024   # BR(chargino2 -> A0 chargino1)
+     8.05456712E-03   2        37   1000022   # BR(chargino2 -> Hp neutralino1)
+     3.00521974E-02   2        37   1000023   # BR(chargino2 -> Hp neutralino2)
+DECAY   1000022     0.00000000E+00   # Gamma(neutralino1)
+DECAY   1000023     3.09285039E-02   # Gamma(neutralino2)
+     1.00000000E+00   2        25   1000022   # BR(neutralino2 -> h0 neutralino1)
+DECAY   1000025     1.38339334E-01   # Gamma(neutralino3)
+     9.20761605E-01   2        23   1000022   # BR(neutralino3 -> Z neutralino1)
+     9.42212855E-03   2        25   1000022   # BR(neutralino3 -> h0 neutralino1)
+     6.98162665E-02   2        36   1000022   # BR(neutralino3 -> A0 neutralino1)
+DECAY   1000035     1.16614944E+00   # Gamma(neutralino4)
+     4.06500153E-03   2        23   1000022   # BR(neutralino4 -> Z neutralino1)
+     1.17428144E-05   2        23   1000023   # BR(neutralino4 -> Z neutralino2)
+     4.36734367E-01   2       -24   1000024   # BR(neutralino4 -> W chargino1)
+     4.36734367E-01   2  -1000024        24   # BR(neutralino4 -> Chargino1 W)
+     1.40000395E-02   2        25   1000022   # BR(neutralino4 -> h0 neutralino1)
+     5.15423863E-03   2        35   1000022   # BR(neutralino4 -> HH neutralino1)
+     3.17712243E-03   2        36   1000022   # BR(neutralino4 -> A0 neutralino1)
+     1.87154816E-02   2        25   1000023   # BR(neutralino4 -> h0 neutralino2)
+     7.62426970E-04   2        36   1000023   # BR(neutralino4 -> A0 neutralino2)
+     1.62872631E-04   2        25   1000025   # BR(neutralino4 -> h0 neutralino3)
+     4.02411695E-02   2       -37   1000024   # BR(neutralino4 -> Hp chargino1)
+     4.02411695E-02   2  -1000024        37   # BR(neutralino4 -> Chargino1 Hp)
+DECAY        25     5.63212826E-03   # Gamma(h0)
+     2.05143478E-04   2        22        22   # BR(h0 -> photon photon)
+     7.92108972E-08   2        23        23   # BR(h0 -> Z Z)
+     3.55668299E-08   2       -24        24   # BR(h0 -> W W)
+     3.41045716E-03   2        21        21   # BR(h0 -> gluon gluon)
+     7.13787480E-09   2       -11        11   # BR(h0 -> Electron electron)
+     3.17449275E-04   2       -13        13   # BR(h0 -> Muon muon)
+     9.11542928E-02   2       -15        15   # BR(h0 -> Tau tau)
+     3.17760547E-08   2        -2         2   # BR(h0 -> Up up)
+     4.44955032E-03   2        -4         4   # BR(h0 -> Charm charm)
+     1.32811312E-06   2        -1         1   # BR(h0 -> Down down)
+     3.33533168E-04   2        -3         3   # BR(h0 -> Strange strange)
+     9.00128092E-01   2        -5         5   # BR(h0 -> Bottom bottom)
+DECAY        35     1.29992428E-02   # Gamma(HH)
+     2.47514271E-04   2        22        22   # BR(HH -> photon photon)
+     1.06944640E-03   2        22        23   # BR(HH -> photon Z)
+     2.42142199E-02   2        23        23   # BR(HH -> Z Z)
+     1.95840613E-01   2       -24        24   # BR(HH -> W W)
+     3.84421333E-02   2        21        21   # BR(HH -> gluon gluon)
+     2.43173723E-09   2       -11        11   # BR(HH -> Electron electron)
+     1.08173431E-04   2       -13        13   # BR(HH -> Muon muon)
+     3.10889502E-02   2       -15        15   # BR(HH -> Tau tau)
+     6.44968178E-08   2        -2         2   # BR(HH -> Up up)
+     9.03562260E-03   2        -4         4   # BR(HH -> Charm charm)
+     3.92154701E-07   2        -1         1   # BR(HH -> Down down)
+     9.84847015E-05   2        -3         3   # BR(HH -> Strange strange)
+     2.63018544E-01   2        -5         5   # BR(HH -> Bottom bottom)
+     1.02481949E-02   2        23        36   # BR(HH -> Z A0)
+     4.26587644E-01   2        25        25   # BR(HH -> h0 h0)
+DECAY        36     8.29131882E-03   # Gamma(A0)
+     5.12898076E-05   2        22        22   # BR(A0 -> photon photon)
+     3.05869370E-07   2        22        23   # BR(A0 -> photon Z)
+     8.18947104E-03   2        21        21   # BR(A0 -> gluon gluon)
+     7.54948655E-09   2       -11        11   # BR(A0 -> Electron electron)
+     3.35793315E-04   2       -13        13   # BR(A0 -> Muon muon)
+     9.66157953E-02   2       -15        15   # BR(A0 -> Tau tau)
+     2.11670527E-08   2        -2         2   # BR(A0 -> Up up)
+     3.05232086E-03   2        -4         4   # BR(A0 -> Charm charm)
+     1.30928501E-06   2        -1         1   # BR(A0 -> Down down)
+     3.28810537E-04   2        -3         3   # BR(A0 -> Strange strange)
+     8.90895727E-01   2        -5         5   # BR(A0 -> Bottom bottom)
+     5.29148086E-04   2        23        25   # BR(A0 -> Z h0)
+DECAY        37     1.21450161E-01   # Gamma(Hp)
+     9.90386263E-10   2       -11        12   # BR(Hp -> Electron nu_e)
+     4.23420701E-05   2       -13        14   # BR(Hp -> Muon nu_mu)
+     1.19748818E-02   2       -15        16   # BR(Hp -> Tau nu_tau)
+     1.38302816E-07   2        -1         2   # BR(Hp -> Down up)
+     1.53111614E-06   2        -3         2   # BR(Hp -> Strange up)
+     9.80512124E-07   2        -5         2   # BR(Hp -> Bottom up)
+     1.31867393E-05   2        -1         4   # BR(Hp -> Down charm)
+     3.27813561E-04   2        -3         4   # BR(Hp -> Strange charm)
+     1.37724880E-04   2        -5         4   # BR(Hp -> Bottom charm)
+     1.19070730E-05   2        -1         6   # BR(Hp -> Down top)
+     2.59590603E-04   2        -3         6   # BR(Hp -> Strange top)
+     1.55970480E-01   2        -5         6   # BR(Hp -> Bottom top)
+     7.73404435E-01   2        24        25   # BR(Hp -> W h0)
+     3.20049610E-04   2        24        35   # BR(Hp -> W HH)
+     5.75349379E-02   2        24        36   # BR(Hp -> W A0)
+DECAY         6     1.37240968E+00   # Gamma(top)
+     1.00000000E+00   2         5        24   # BR(top -> bottom W)
