@@ -52,7 +52,7 @@ for fstate in [[-1000024,1000024],[-1000037,1000024],[-1000024,1000037],[-100003
         TanBrow = []
         for y in np.arange(2,50,2):#24loops = 600loops
             counter += 1
-            br = f.getBR(x,y,counter,fstate,HiggsNumber)
+            br = f.getBR(x,y,counter,fstate,HiggsNumber)#include the new gerBR function
             BRrow.append(br)
             print counter
             MA0row.append(x)
@@ -67,5 +67,5 @@ TanBArray = np.array(TanB)
 
 #safe the Arrays in a list
 ArrayListH = [MA0Array,TanBArray,BRs]
-with open("Arrays/ArrayListH.pkl",'web') as outputFile:
+with open("Arrays_Feynhiggs/ArrayListH.pkl",'web') as outputFile:
     pickle.dump(ArrayListH, outputFile, -1)
