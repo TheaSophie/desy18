@@ -72,15 +72,28 @@ def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
     CS = pyplot.contour(Array1, Array2, Array3, 6, colors='k')
     pyplot.rc('text', usetex=True)
     pyplot.rc('font', family='serif')
-    #pyplot.xlabel(r'm$_{H}$ (GeV)') #1]
-    pyplot.xlabel(r'm$_{A}$ (GeV)') #1]
+    pyplot.xlabel(r'm$_{H}$ (GeV)') #1]
+    #pyplot.xlabel(r'm$_{A}$ (GeV)') #1]
     pyplot.ylabel(r'$\tan{\beta}$')
     Decayparticles = LatexDaughterparticle[str(Daughterparticle)]
     pyplot.title(r'Branching Ratios('+str(Motherparticle)+r' $\rightarrow$ '+str(Decayparticles)+')')
     pyplot.clabel(CS, inline=1, fontsize=8)
-    #pyplot.savefig("Plots_SusyhitFeynhiggs/Plots_BR_H/contour_H_"+str(Daughterparticle)+".pdf") #save #2]
-    pyplot.savefig('Plots_SusyhitFeynhiggs/Plots_BR_A0/contour_A_'+str(Daughterparticle)+'.pdf') #2]
+    pyplot.savefig("Plots_SusyhitFeynhiggs/Plots_BR_H/contour_H_"+str(Daughterparticle)+".pdf") #save #2]
+    #pyplot.savefig('Plots_SusyhitFeynhiggs/Plots_BR_A0/contour_A_'+str(Daughterparticle)+'.pdf') #2]
 
+
+def PlottingTanBr(tanB, r):
+    fig = pyplot.figure()
+    pyplot.plot(tanB, r, color='green', marker='o', linestyle='dashed',
+        linewidth=2, markersize=12)
+    pyplot.rc('text', usetex=True)
+    pyplot.rf('font', family='serif')
+    pyplot.xlabel(r'$\tan{\beta}$')
+    pyplot.ylabel(r'r = $\frac{signal}{95\%CL limit on signal}$')
+    pyplot.title(r'r in dependence of $\tan{\beta}$')
+    pyplot.savefig('Plots_CheckMATE/TanB_r_ppTOnn_cc_cn_13TeV.pdf')
+    
+    
 
 #### 5. write a combined function, over which then can be looped in plot.py
 def getBRSF(a0, tanb, indize, fstate, HiggsBlockNummer):
