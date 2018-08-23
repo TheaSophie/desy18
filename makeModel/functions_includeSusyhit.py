@@ -1,5 +1,5 @@
 ##### functions ##################################
-##### define the functions here that are needed to run and vary the parameters in combination with feynhiggs
+##### define the functions here that are needed to run and vary the parameters in combination with susyhit+feynhiggs
 
 #### import all packages
 import os
@@ -13,8 +13,10 @@ from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from collections import OrderedDict
 
+
 #H or A0? (2)For EXECUTION: #1]1. runFeynhiggsAfterSusyhit Savecommand #2]3. readoutBR SLHAFile-directory/source
 # (2)For PLOTTING: #1]4. plotting pyplot.xlabel 2]4. plotting pyplot.savefig
+
 
 susyhit_folder = '/home/summerstudent/tools/susyhit/'
 Feynhiggs_folder = '/home/summerstudent/Programs/feynhiggs/x86_64-Linux/bin/FeynHiggs' 
@@ -26,8 +28,8 @@ def runFeynhiggsAfterSusyhit(indize):
     os.system(runCommand)
     safeCommand = "mv " + susyhit_folder + "/susyhit_slha.out.fh-001 /home/summerstudent/Desktop/desy18/makeModel/OutputSusyhit_Feynhiggs/susyhit_slha.out.fh-001_"+str(indize)
     safeCommandH = "mv " + susyhit_folder + "/susyhit_slha.out.fh-001 /home/summerstudent/Desktop/desy18/makeModel/OutputSusyhit_FeynhiggsH/susyhit_slha.out.fh-001_"+str(indize)
-    #os.system(safeCommand) #1]
-    os.system(safeCommandH) #1]
+    os.system(safeCommand) #1]
+    #os.system(safeCommandH) #1]
     
 def runSusyhit():
     wd = os.getcwd()
@@ -82,16 +84,16 @@ def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
     #pyplot.savefig('Plots_SusyhitFeynhiggs/Plots_BR_A0/contour_A_'+str(Daughterparticle)+'.pdf') #2]
 
 
-def PlottingTanBr(tanB, r):
+def PlottingTanBr(tanB, r, saveTitle):
     fig = pyplot.figure()
     pyplot.plot(tanB, r, color='green', marker='o', linestyle='dashed',
         linewidth=2, markersize=12)
     pyplot.rc('text', usetex=True)
-    pyplot.rf('font', family='serif')
+    #pyplot.rf('font', family='serif')
     pyplot.xlabel(r'$\tan{\beta}$')
     pyplot.ylabel(r'r = $\frac{signal}{95\%CL limit on signal}$')
     pyplot.title(r'r in dependence of $\tan{\beta}$')
-    pyplot.savefig('Plots_CheckMATE/TanB_r_ppTOnn_cc_cn_13TeV.pdf')
+    pyplot.savefig('Plots_CheckMATE/'+str(saveTitle)+'.pdf')
     
     
 

@@ -23,18 +23,32 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from collections import OrderedDict
 
 
-#with open ('/home/summerstudent/checkmate/bin/ArrayStorage/rArray.pkl') as input:
-with open ('/home/summerstudent/checkmate/bin/ArrayStorage/rArray_13Tev_nn_cc_nc_100000.pkl') as input:
+#with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList.pkl') as input:
+with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList_12tanBpoints.pkl') as input:
+#with open ('/home/summerstudent/checkmate/bin/ArrayStorage/rArray_13Tev_nn_cc_nc_100000.pkl') as input:
     ArrayList = pickle.load(input)
     #ArrayList = [rArray,AnalysisArray,SignalArray]
 
+print ArrayList
+    
 #create TanBArray  
-TanBArray = np.arange(2, 50, 2)
+TanBArray = np.arange(2, 50, 4)#2
+#TanBArray = np.arange(1, 3, 1)#1,2
 
-rArray = []
-rArray.append(ArrayList[0])
+print TanBArray
 
-TanBArray= np.array(TanBArray)
-rArray=np.array(rArray)
+rArray = ArrayList[0]
+print rArray
+#rArray.append(ArrayList[0])
 
-fS.PlottingTanBr(TanBArray, rArray)
+#print rArray
+
+TanBArray = np.array(TanBArray)
+rArray =np.array(rArray)
+
+print TanBArray
+print rArray
+
+saveTitle = 'ppTOgaugau_12points_tanBPlane_13Tev_200000Events'
+
+fS.PlottingTanBr(TanBArray, rArray, saveTitle)
