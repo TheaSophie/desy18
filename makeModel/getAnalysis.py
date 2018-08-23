@@ -39,12 +39,9 @@ print TanBArray
 
 rArray = ArrayList[0]
 print rArray
+#rArray.append(ArrayList[0])
 
-rArray[2] = 0.931040928048
-rArray[3] = 0.50568648183
-rArray[6] = 0.50568648183
-rArray[10] = 0.505686457274
-
+#print rArray
 
 TanBArray = np.array(TanBArray)
 rArray =np.array(rArray)
