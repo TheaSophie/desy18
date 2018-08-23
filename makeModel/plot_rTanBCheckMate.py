@@ -45,18 +45,18 @@ rArray[3] = 0.50568648183
 rArray[6] = 0.50568648183
 rArray[10] = 0.505686457274
 
-#z = rArray[1]
-#a = np.around(z, decimals=2)
-#rArray[1] = a
-
-#f = array(rArray)
-#g = np.around(rArray, 2)
-
-TanBArray = np.array(TanBArray)
-rArray = np.array(rArray)
+TanBArray = np.array(TanBArray)#.reshape((12,12))
+rArray = np.array(rArray)#.reshape((12,12))
 
 #rArray = np.round(rArray, 2)
+print rArray
 
+for i in range(0, 12):
+	 rArray_i = float(rArray[i])
+	 rArray_i = round(rArray_i, 2)
+	 rArray[i] = rArray_i
+	 #rArray.append(rArray_+str(i))
+	 
 print TanBArray
 print rArray
 
