@@ -45,13 +45,16 @@ rArray[3] = 0.50568648183
 rArray[6] = 0.50568648183
 rArray[10] = 0.505686457274
 
+#z = rArray[1]
+#a = np.around(z, decimals=2)
+#rArray[1] = a
 
 TanBArray = np.array(TanBArray)
-rArray =np.array(rArray)
+rArrayF =np.array(rArray)
 
 print TanBArray
-print rArray
+print rArrayF
 
 saveTitle = 'ppTOgaugau_12points_tanBPlane_13Tev_200000Events'
 
-fS.PlottingTanBr(TanBArray, rArray, saveTitle)
+fS.PlottingTanBr(TanBArray, rArrayF, saveTitle)

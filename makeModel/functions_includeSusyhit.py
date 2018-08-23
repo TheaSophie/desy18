@@ -87,7 +87,7 @@ def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
 def PlottingTanBr(tanB, r, saveTitle):
     fig = pyplot.figure()
     pyplot.plot(tanB, r, color='green', marker='o', linestyle='dashed',
-        linewidth=2, markersize=12)
+                linewidth=1, markersize=8)
     pyplot.rc('text', usetex=True)
     #pyplot.rf('font', family='serif')
     pyplot.xlabel(r'$\tan{\beta}$')
