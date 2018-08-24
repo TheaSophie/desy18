@@ -91,7 +91,7 @@ def PlottingTanBr(tanB, r, saveTitle):
     pyplot.rc('text', usetex=True)
     #pyplot.rf('font', family='serif')
     pyplot.xlabel(r'$\tan{\beta}$')
-    pyplot.ylabel(r'r = $\frac{signal}{95\%CL limit on signal}$')
+    pyplot.ylabel(r'r = $\frac{signal}{95\%CL \ limit\ on\ signal}$')
     pyplot.title(r'r in dependence of $\tan{\beta}$')
     pyplot.savefig('Plots_CheckMATE/'+str(saveTitle)+'.pdf')
     

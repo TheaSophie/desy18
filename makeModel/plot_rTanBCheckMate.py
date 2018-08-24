@@ -24,7 +24,7 @@ from collections import OrderedDict
 
 
 #with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList.pkl') as input:
-with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList_12tanBpoints.pkl') as input:
+with open ('/home/summerstudent/checkmate2/bin/ArrayStorage/ArrayList_6tanBpoints.pkl') as input:
 #with open ('/home/summerstudent/checkmate/bin/ArrayStorage/rArray_13Tev_nn_cc_nc_100000.pkl') as input:
     ArrayList = pickle.load(input)
     #ArrayList = [rArray,AnalysisArray,SignalArray]
@@ -32,7 +32,7 @@ with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList_12tanBpoint
 print ArrayList
     
 #create TanBArray  
-TanBArray = np.arange(2, 50, 4)#2
+TanBArray = np.arange(2, 50, 8)#2
 #TanBArray = np.arange(1, 3, 1)#1,2
 
 print TanBArray
@@ -40,10 +40,7 @@ print TanBArray
 rArray = ArrayList[0]
 print rArray
 
-rArray[2] = 0.931040928048
-rArray[3] = 0.50568648183
-rArray[6] = 0.50568648183
-rArray[10] = 0.505686457274
+rArray[1] = 0.779528406486
 
 TanBArray = np.array(TanBArray)#.reshape((12,12))
 rArray = np.array(rArray)#.reshape((12,12))
@@ -51,15 +48,17 @@ rArray = np.array(rArray)#.reshape((12,12))
 #rArray = np.round(rArray, 2)
 print rArray
 
-for i in range(0, 12):
-	 rArray_i = float(rArray[i])
-	 rArray_i = round(rArray_i, 2)
-	 rArray[i] = rArray_i
+rValues = [float(x) for x in rArray]
+
+#for i in range(0, 12):
+#	 rValues.append(float(rArray[i]))
+	 #rArray_i = round(rArray_i, 2)
+	 #rArray[i] = rArray_i
 	 #rArray.append(rArray_+str(i))
 	 
 print TanBArray
-print rArray
+print rValues
 
-saveTitle = 'ppTOgaugau_12points_tanBPlane_13Tev_200000Events'
+saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2'
 
-fS.PlottingTanBr(TanBArray, rArray, saveTitle)
+fS.PlottingTanBr(TanBArray, rValues, saveTitle)
