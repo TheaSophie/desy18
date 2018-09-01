@@ -1,0 +1,9 @@
+ppTOgaugau_6points_tanBPane_13Tev_500000Events_checkmate2_includingHiggs.pdf:
+MA0 = 352GeV
+Analyse = cms_sus_16_039
+SR = SR_G05
+
+ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2.pdf:
+MA0 = 352GeV
+Analyse = cms_sus_16_039
+SR = SR_G05

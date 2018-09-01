@@ -24,13 +24,13 @@ from collections import OrderedDict
 
 
 #with open ('/home/summerstudent/checkmate/bin/ArrayStorage/ArrayList.pkl') as input:
-with open ('/home/summerstudent/checkmate2/bin/ArrayStorage/ArrayList_6tanBpoints.pkl') as input:
-#with open ('/home/summerstudent/checkmate/bin/ArrayStorage/rArray_13Tev_nn_cc_nc_100000.pkl') as input:
+with open ('/home/summerstudent/checkmate2/bin/ArrayStorage/AL_tanB6_352_withHiggs.pkl') as input:
+#with open ('/home/summerstudent/checkmate2/bin/ArrayStorage/ArrayList_6tanBpoints_352GeV.pkl') as input:
     ArrayList = pickle.load(input)
     #ArrayList = [rArray,AnalysisArray,SignalArray]
 
 print ArrayList
-    
+'''   
 #create TanBArray  
 TanBArray = np.arange(2, 50, 8)#2
 #TanBArray = np.arange(1, 3, 1)#1,2
@@ -40,7 +40,9 @@ print TanBArray
 rArray = ArrayList[0]
 print rArray
 
-rArray[1] = 0.779528406486
+rArray[0] = 0.923437242568
+rArray[3] = 0.813848965673
+rArray[4] = 0.957357529542
 
 TanBArray = np.array(TanBArray)#.reshape((12,12))
 rArray = np.array(rArray)#.reshape((12,12))
@@ -59,6 +61,7 @@ rValues = [float(x) for x in rArray]
 print TanBArray
 print rValues
 
-saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2'
+saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2_includingHiggs'
 
 fS.PlottingTanBr(TanBArray, rValues, saveTitle)
+'''
