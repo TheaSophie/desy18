@@ -84,15 +84,14 @@ def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
     #pyplot.savefig('Plots_SusyhitFeynhiggs/Plots_BR_A0/contour_A_'+str(Daughterparticle)+'.pdf') #2]
 
 
-def PlottingTanBr(tanB, r, saveTitle):
+def PlottingTanBr(tanB, r, tanB2, r2, saveTitle):
     fig = pyplot.figure()
-    pyplot.plot(tanB, r, color='green', marker='o', linestyle='dashed',
-                linewidth=1, markersize=8)
+    pyplot.plot(tanB, r, 'g', tanB2, r2, 'o')
     pyplot.rc('text', usetex=True)
     #pyplot.rf('font', family='serif')
     pyplot.xlabel(r'$\tan{\beta}$')
     pyplot.ylabel(r'r = $\frac{signal}{95\%CL \ limit\ on\ signal}$')
-    pyplot.title(r'r in dependence of $\tan{\beta}$')
+    pyplot.title(r'r in dependence of $\tan{\beta}$ with M$_{A0}$=352GeV and for gaugino production including the heavy Higgs')
     pyplot.savefig('Plots_CheckMATE/'+str(saveTitle)+'.pdf')
     
     
