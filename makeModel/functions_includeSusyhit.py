@@ -86,8 +86,8 @@ def plotting(Array1, Array2, Array3, Motherparticle, Daughterparticle):
 
 def PlottingTanBr(tanB, r, tanB2, r2, saveTitle):
     fig = pyplot.figure()
-    pyplot.plot(tanB, r, color='green', marker='x', markersize=2)#linestyle='dashed', linewidth=1, markersize=8)
-    pyplot.plot(tanB2, r2, color='orange', marker='x', markersize=2)#linestyle='dashed', linewidth=1, markersize=8 )
+    pyplot.plot(tanB, r, color='green', marker='x', markersize=7, linestyle='dashed', linewidth=1)
+    pyplot.plot(tanB2, r2, color='orange', marker='x', markersize=7, linestyle='dashed', linewidth=1)
     #pyplot.setp(lines, color='r', linewidth=2.0)
     pyplot.rc('text', usetex=True)
     #pyplot.rf('font', family='serif')
