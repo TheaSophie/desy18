@@ -55,9 +55,14 @@ print TanBArray
 print rValues
 print rValues2
 
+rValuesCombined = [0.5*(rValues[0]+rValues2[0]), 0.5*(rValues[1]+rValues2[1]), 0.5*(rValues[2]+rValues2[2]), 0.5*(rValues[3]+rValues2[3]), 0.5*(rValues[4]+rValues2[4]), 0.5*(rValues[5]+rValues2[5])]
+
+print rValuesCombined
+
 #rError = [,,,,,,]
-rError2 = [,,,,,,]
+#rError2 = [,,,,,,]
 
-saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2_includingHiggs_run1_run2'
+saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2_includingHiggs2_run1_run2'
 
-fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, rError2, saveTitle)
+#fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, rError2, saveTitle)
+fS.PlottingTanBr2(TanBArray, rValuesCombined, saveTitle)
