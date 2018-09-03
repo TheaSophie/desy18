@@ -1,4 +1,4 @@
-#! /bin/bash
+#1;5201;0c#! /bin/bash
 
 #### Plot ######################################################
 #### plot r of CheckMate of the tanBeta Plane
@@ -68,12 +68,15 @@ print(a*(rValues[0]+rValues2[0]+rValues3[0]))
 
 rValuesCombined = [a*(rValues[0]+rValues2[0]+rValues3[0]), a*(rValues[1]+rValues2[1]+rValues3[1]), a*(rValues[2]+rValues2[2]+rValues3[2]), a*(rValues[3]+rValues2[3]+rValues3[3]), a*(rValues[4]+rValues2[4]+rValues3[4]), a*(rValues[5]+rValues2[5]+rValues3[5])]
 
+rValuesCombined = np.array(rValuesCombined)
+
 print rValuesCombined
 
 #rError = [,,,,,,]
 #rError2 = [,,,,,,]
 
 saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_1500000Events_checkmate2_includingHiggs'
+#yerr = 15 #%
 
 #fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, rError2, saveTitle)
-fS.PlottingTanBr2(TanBArray, rValuesCombined, saveTitle)
+fS.PlottingTanBr3(TanBArray, rValuesCombined, saveTitle)
