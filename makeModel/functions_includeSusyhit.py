@@ -100,7 +100,7 @@ def PlottingTanBr(tanB, r, tanB2, r2, XERR, saveTitle):
 
 def PlottingTanBr2(tanB, r, saveTitle):
     fig = pyplot.figure()
-    pyplot.plot(tanB, r, color='green', marker='o', markersize=8, linestyle='dashed', linewidth=1)
+    pyplot.plot(tanB, r, color='blue', marker='o', markersize=8, linestyle='dashed', linewidth=1)
     #pyplot.plot(tanB2, r2, color='orange', marker='o', markersize=8, linestyle='dashed', linewidth=1)
     #pyplot.errorbar(tanB2, r2, yerr=None, xerr=XERR, fmt='', ecolor=None, elinewidth=None, capsize=None, barsabove=False, lolims=False, uplims=False, xlolims=False, xuplims=False, errorevery=1, capthick=None, hold=None, data=None, **kwargs)
     #pyplot.setp(lines, color='r', linewidth=2.0)
