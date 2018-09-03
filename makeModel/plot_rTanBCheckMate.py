@@ -76,7 +76,5 @@ print rValuesCombined
 #rError2 = [,,,,,,]
 
 saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_1500000Events_checkmate2_includingHiggs'
-#yerr = 15 #%
 
-#fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, rError2, saveTitle)
-fS.PlottingTanBr3(TanBArray, rValuesCombined, saveTitle)
+fS.PlottingTanBr2_includingHiggs(TanBArray, rValuesCombined, saveTitle)
