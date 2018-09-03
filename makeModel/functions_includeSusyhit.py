@@ -110,6 +110,20 @@ def PlottingTanBr2(tanB, r, saveTitle):
     pyplot.ylabel(r'r = $\frac{signal}{95\%CL \ limit\ on\ signal}$')
     pyplot.title(r'r in dependence of $\tan{\beta}$ with heavy Higgs')#, M$_{A0}$=352GeV')
     pyplot.savefig('Plots_CheckMATE/'+str(saveTitle)+'.pdf')
+
+
+def PlottingTanBr3(tanB, r, saveTitle):
+    fig = pyplot.figure()
+    pyplot.plot(tanB, r, color='blue', marker='o', markersize=8, linestyle='dashed', linewidth=1)
+    #pyplot.plot(tanB2, r2, color='orange', marker='o', markersize=8, linestyle='dashed', linewidth=1)                                                                                                                                  #pyplot.errorbar(tanB2, r2, yerr=None, xerr=XERR, fmt='', ecolor=None, elinewidth=None, capsize=None, barsabove=False, lolims=False, uplims=False, xlolims=False, xuplims=False, errorevery=1, capthick=None, hold=None, data=None, **kwargs)                                                                                                                                                                                                                           #pyplot.setp(lines, color='r', linewidth=2.0) 
+    pyplot.rc('text', usetex=True)
+    #pyplot.rf('font', family='serif')
+    pyplot.xlabel(r'$\tan{\beta}$')
+    pyplot.ylabel(r'r = $\frac{signal}{95\%CL \ limit\ on\ signal}$')
+    pyplot.title(r'r in dependence of $\tan{\beta}$, no Higgs')#, M$_{A0}$=352GeV')
+    pyplot.savefig('Plots_CheckMATE/'+str(saveTitle)+'.pdf')
+
+
     
 
 #### 5. write a combined function, over which then can be looped in plot.py
