@@ -100,7 +100,7 @@ def PlottingTanBr(tanB, r, tanB2, r2, XERR, saveTitle):
 
 def PlottingTanBr2_includingHiggs(tanB, r, saveTitle):
     fig, ax = pyplot.subplots()
-    pyplot.plot(tanB, r, color='blue', marker='o', markersize=8, linestyle='dashed', linewidth=1)
+    #pyplot.plot(tanB, r, color='blue', marker='o', markersize=8, linestyle='dashed', linewidth=1)
     yerr2 = r*87/1000
     ax.errorbar(tanB, r, yerr=yerr2, color='blue', barsabove='False') 
     pyplot.rc('text', usetex=True)
