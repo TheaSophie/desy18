@@ -55,6 +55,9 @@ print TanBArray
 print rValues
 print rValues2
 
+#rError = [,,,,,,]
+rError2 = [,,,,,,]
+
 saveTitle = 'ppTOgaugau_6points_tanBPlane_13Tev_500000Events_checkmate2_includingHiggs_run1_run2'
 
-fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, saveTitle)
+fS.PlottingTanBr(TanBArray, rValues, TanBArray, rValues2, rError2, saveTitle)
