@@ -116,7 +116,7 @@ def PlottingTanBr3(tanB, r, saveTitle):
     fig, ax = pyplot.subplots()
     pyplot.plot(tanB, r, color='blue', marker='o', markersize=8, linestyle='dashed', linewidth=1)
     #pyplot.plot(tanB2, r2, color='orange', marker='o', markersize=8, linestyle='dashed', linewidth=1)                                                                                                                                  #pyplot.errorbar(tanB2, r2, yerr=None, xerr=XERR, fmt='', ecolor=None, elinewidth=None, capsize=None, barsabove=False, lolims=False, uplims=False, xlolims=False, xuplims=False, errorevery=1, capthick=None, hold=None, data=None, **kwargs)                                                                                                                                                                                                                           #pyplot.setp(lines, color='r', linewidth=2.0) 
-    yerr2 = r*15/100
+    yerr2 = r*87/1000
     ax.errorbar(tanB, r, yerr=yerr2, color='blue', barsabove='False')
     pyplot.rc('text', usetex=True)
     #pyplot.rf('font', family='serif')
